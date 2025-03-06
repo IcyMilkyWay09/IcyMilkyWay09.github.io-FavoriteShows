@@ -1,0 +1,916 @@
+*
+{
+    background-color: #130954;
+    box-sizing: border-box;
+}
+
+/* Used in the title for the homepage */
+h1 
+{
+    color: #F6E78A;
+    font-family: 'Fascinate';
+    text-align: center;
+    font-size: calc(2rem + 3vw);  
+    background-color: #3C2E7A;
+    padding: 0px, 0px; 
+}
+
+/* Used in the title of the show pages */
+h3
+{
+    color: #F6E78A;
+    font-family: 'Fascinate';
+    text-align: center;
+    font-size: calc(2rem + 3.5vw);  
+    background-color: #3C2E7A;
+    padding: 0px, 0px; 
+    text-decoration: underline;
+}
+
+/* Used in text headings on show pages */
+h4
+{
+    font-size: calc(1rem + 1vw);
+    background-color: #3C2E7A;
+    padding: 10px;
+}
+
+/* Footer */
+h5
+{
+    background-color: #3C2E7A;
+    padding: 30px;
+}
+
+p
+{
+    font-size: calc(1rem + 0.5vw);
+    background-color: #3C2E7A;
+    font-family: 'Fredoka';
+    padding: 15px;
+}
+
+br
+{
+    background-color: #3C2E7A;
+}
+/**************************** Home Header *****************************/
+.homeHeader
+{
+    /* Decorations */
+    background-color: #3C2E7A;
+    padding: 50px;
+
+    /* Text */
+    color: #F6E78A;
+}
+/* image on the home screen */
+.butterfly
+{
+    max-height: 120px;
+    max-width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3C2E7A;
+}
+
+/**************************** Buttons for the Home Page *****************************/
+.button
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 3px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+
+/**************************** Grid Container *****************************/
+.grid-container
+{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    height: 100vh;
+    margin: 0px;
+}
+
+.header
+{
+    grid-area: header;
+    background-color: #3C2E7A;
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    
+    /* Text */
+    color: #F6E78A;
+    font-family: 'Fascinate';
+    font-size: calc(1.5rem + 3vw);
+    text-align: center;
+}
+
+.sidebar
+{
+    grid-area: sidebar;
+    background-color: #3C2E7A;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+
+    /* Text */
+    color: #F6E78A;
+    font-family: 'Fredoka';
+}
+
+.main
+{
+    grid-area: main;
+    background-color: #3C2E7A; 
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+    
+    /* Text */
+    color: #F6E78A;
+    font-family: 'Fredoka';
+}
+
+.footer
+{
+    grid-area: footer;
+    background-color: #3C2E7A;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+    
+    /* Text */
+    color: #F6E78A;
+    font-family: 'Fascinate';
+    text-align: center; 
+    font-size: calc(1rem + 1vw);
+}
+
+/*********************** Navbar in the header ****************************/
+.flexbox 
+{
+    overflow: hidden;
+    background-color: #3C2E7A;
+    border: none;
+}
+
+.navbar1
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.navbar2
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.navbar3
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.navbar4
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.navbar5
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.navbar6
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.navbar7
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+  
+.flexbox a 
+{
+    font-size: 16px;
+    padding: 14px 16px;
+    background-color: #3C2E7A;
+
+    /* Centers everything */
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    padding: 15px 0px;
+
+    /* Text */ 
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fredoka'; font-size: 22px;
+
+    border: 0px solid black; 
+}
+
+.flexbox a:hover
+{
+
+    border: 0px solid black; 
+}
+
+/******************* Navbar On Smaller Screens *********************/
+/* Stacks the elements instead of stretches them across the screen */
+@media screen and (max-width: 600px) 
+{
+    .flexbox a 
+    {
+      float: none;
+      width: 100%;
+    }
+}
+/****************** Sidebar Buttons ********************/
+.sidebarButton
+{    
+    margin: 0;
+    display: block;
+    align-items: center;
+    padding: 40px;
+
+    /* decoration */
+    background-color: #3C2E7A;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    font-size: calc(1rem + 0.5vw);
+}
+
+.sidebarButton1
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.sidebarButton2
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+.sidebarButton3
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+}
+
+.menuButton1
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+    border: 5px solid #8C44BF;
+}
+.menuButton2
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+    border: 5px solid #8C44BF;
+}
+.menuButton3
+{
+    background-color: #3C2E7A;
+    color: #F6E78A;
+    border: 5px solid #8C44BF;
+}
+
+a 
+{
+    /* Text */
+    text-align: center;
+    color: #F6E78A;
+    text-decoration: none;
+    font-size: calc(1rem + 0.5vw);
+    
+    /* Decorations */
+    background-color: #3C2E7A;
+    border: 5px solid #8C44BF;
+    
+    margin: 0;
+    display: block;
+    align-items: center;
+    padding: 40px;
+}
+
+a:hover
+{
+    background-color: #8C44BF;
+    border: 5px solid #DC8FE1;
+}
+/****************** Main Section ********************/
+.subtitle1
+{
+    color: #F6E78A;
+    background-color: #3C2E7A;
+}
+.subtitle2
+{
+    color: #F6E78A;
+    background-color: #3C2E7A;
+}
+.subtitle3
+{
+    color: #F6E78A;
+    background-color: #3C2E7A;
+}
+.pg1
+{
+    color: #F6E78A;
+    background-color: #3C2E7A;
+}
+.pg2
+{
+    color: #F6E78A;
+    background-color: #3C2E7A;
+}
+.pg3
+{
+    color: #F6E78A;
+    background-color: #3C2E7A;
+}
+
+/*********************** Picture ****************************/
+.responsiveImage
+{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; 
+
+    background-color: #3C2E7A;
+    border: 5px solid #8C44BF;
+}
+
+/************************* Light and Dark Mode *****************************/
+.light-mode 
+{
+    background-color: #E6C0E9;
+    color: #130954;
+}
+
+/****************** Pesky Buttons for the home screen ***********************/
+.button1
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 3px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+.button2
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 3px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+.button3
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 3px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+.button4
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 3px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+.button5
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 3px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+.button6
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 3px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+.button7
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 30%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 5px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+
+/************************* Table *****************************/
+table
+{ 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Category boxes */
+th
+{
+    font-family: 'Fascinate'; font-size: 22px;
+    border: 2px solid #8C44BF;
+    padding: 15px;
+    text-align: left;
+    color: #F6E78A;
+    max-width: 50px;
+}
+
+/* Content boxes */
+td
+{
+    font-family: 'Fredoka'; font-size: 22px;
+    border: 2px solid #3C2E7A;
+    padding: 15px;
+    text-align: left;
+    color: #F6E78A;
+    font-weight: lighter;
+}
+
+.title
+{
+    color: #F6E78A;
+    width: 22em;
+    font-family: 'Fascinate'; font-size: 22px;
+    border: 2px solid #8C44BF;
+}
+
+caption
+{
+    color: #F6E78A;
+    font-family: 'Fascinate'; font-size: 22px;
+    font-size: 7vh; 
+}
+
+.ranks
+{
+    text-align: center;
+}
+
+.show
+{
+    text-align: center;
+}
+
+.wordRanks
+{
+    color: #F6E78A;
+    font-family: 'Fascinate'; font-size: 22px;
+    font-size: 5vh; 
+}
+
+/* Footer text */
+h5
+{
+    background-color: #3C2E7A;
+    padding: 30px;
+}
+
+/* Footer */
+.footer
+{
+    grid-area: footer;
+    background-color: #3C2E7A;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+    
+    /* Text */
+    color: #F6E78A;
+    font-family: 'Fascinate';
+    text-align: center; 
+    font-size: calc(1rem + 1vw);
+}
+
+/************************* Light and Dark Mode *****************************/
+.light-mode 
+{
+    background-color: #E6C0E9;
+    color: #130954;
+}
+
+/* Button 7 for the light/dark toggle button */
+.button7
+{
+    padding: 30px 32px;
+    display: inline-block; 
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 30%;
+    
+    /* Text */
+    color: #F6E78A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Fredoka'; font-size: 22px;
+    
+    /* Decoration */
+    border: 5px solid #8C44BF;
+    background-color: #3C2E7A;
+}
+
+/******************* Navbar On Smaller Screens *********************/
+/* Stacks the elements instead of stretches them across the screen */
+@media screen and (max-width: 600px) 
+{
+    .flexbox a 
+    {
+      float: none;
+      width: 100%;
+    }
+}
+
+/*********************************** Here's where everything sucks ***********************************/
+/* show names */
+.showGhosts
+{
+    background-color: #130954;
+    text-align: center;
+}
+.showGoodOmens
+{
+    background-color: #130954;
+    text-align: center;
+}
+.showSantaClaritaDiet
+{
+    background-color: #130954;
+    text-align: center;
+}
+.showSchittsCreek
+{
+    background-color: #130954;
+    text-align: center;
+}
+.showTheWalkingDead
+{
+    background-color: #130954;
+    text-align: center;
+}
+
+/* first row of ranks  - Cast */
+.title1 
+{
+    background-color: #130954;
+    font-family: 'Fascinate';
+    border: 2px solid #8C44BF;
+}
+.ranks1-1
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks2-1
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks3-1
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks4-1
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks5-1
+{
+    background-color: #130954;
+    text-align: center;
+}
+
+/* second row of ranks - Acting */
+.title2
+{
+    background-color: #130954;
+    font-family: 'Fascinate';
+    border: 2px solid #8C44BF;
+}
+.ranks1-2
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks2-2
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks3-2
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks4-2
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks5-2
+{
+    background-color: #130954;
+    text-align: center;
+}
+
+/* third row of ranks - Writing */
+.title3
+{
+    background-color: #130954;
+    font-family: 'Fascinate';
+    border: 2px solid #8C44BF;
+}
+.ranks1-3
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks2-3
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks3-3
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks4-3
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks5-3
+{
+    background-color: #130954;
+    text-align: center;
+}
+
+/* fourth row of ranks - Setting */
+.title4
+{
+    background-color: #130954;
+    font-family: 'Fascinate';
+    border: 2px solid #8C44BF;
+}
+.ranks1-4
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks2-4
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks3-4
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks4-4
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks5-4
+{
+    background-color: #130954;
+    text-align: center;
+}
+
+/* second row of ranks - Characters */
+.title5
+{
+    background-color: #130954;
+    font-family: 'Fascinate';
+    border: 2px solid #8C44BF;
+}
+.ranks1-5
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks2-5
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks3-5
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks4-5
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks5-5
+{
+    background-color: #130954;
+    text-align: center;
+}
+
+/* sixth row of ranks - Surrounding Fandom */
+.title6
+{
+    background-color: #130954;
+    font-family: 'Fascinate';
+    border: 2px solid #8C44BF;
+}
+.ranks1-6
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks2-6
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks3-6
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks4-6
+{
+    background-color: #130954;
+    text-align: center;
+}
+.ranks5-6
+{
+    background-color: #130954;
+    text-align: center;
+}
+
+
+
+/* Fonts 
+Headers:            font-family: 'Fascinate'; 
+Paragraph/Extras:   font-family: 'Fredoka';
+
+Colors
+#F6E78A     Yellow
+#DC8FE1     Purples 
+#8C44BF
+#3C2E7A
+#130954
+
+*/
